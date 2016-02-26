@@ -76,7 +76,7 @@ public class GenerateValueFiles {
         final int portion = 100;
         final float cell_w = w * 1.00f / portion;
 
-        final String WTemplate = "<dimen name=\"w{0}\">{1}</dimen>\n";
+        final String WTemplate = "<dimen name=\"w{0}\">{1}px</dimen>\n";
         for (int i = 1; i < portion; i++) {
             sbForWidth.append(WTemplate.replace("{0}", i + "").replace("{1}",
                     change(cell_w * i) + ""));
@@ -89,7 +89,7 @@ public class GenerateValueFiles {
         sbForHeight.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
         sbForHeight.append("<resources>");
         final float cell_h = h * 1.00f / portion;
-        final String HTemplate = "<dimen name=\"h{0}\">{1}</dimen>\n";
+        final String HTemplate = "<dimen name=\"h{0}\">{1}px</dimen>\n";
         for (int i = 1; i < portion; i++) {
             sbForHeight.append(HTemplate.replace("{0}", i + "").replace("{1}",
                     change(cell_h * i) + ""));

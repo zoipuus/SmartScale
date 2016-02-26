@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 点击触发 -->
+    <item android:bottom="10dp" android:left="10dp" android:right="10dp" android:state_pressed="true" android:top="10dp">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+            <solid android:color="@color/gold" />
+            <padding android:bottom="8dp" android:left="10dp" android:right="10dp" android:top="8dp" />
+            <stroke android:width="2dp" android:color="@color/gold" />
+        </shape>
+    </item>
+    <!-- 默认 -->
+    <item android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+            <solid android:color="@color/orange" />
+            <padding android:bottom="8dp" android:left="10dp" android:right="10dp" android:top="8dp" />
+            <stroke android:width="2dp" android:color="@color/orange" />
+        </shape>
+    </item>
+</selector>

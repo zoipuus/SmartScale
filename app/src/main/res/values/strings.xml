@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SmartScale</string>
     <string name="action_settings">Settings</string>
+
+    <string name="strInputAccHint">Please enter your account</string>
+    <string name="strInputPwdHint">Please enter your password</string>
 </resources>
